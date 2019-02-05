@@ -3,38 +3,45 @@ nav {
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    padding: 5%;
+    padding: 20px 5%;
     .center;
-    @media(min-width:500px) {
+    @media @mobile {
         flex-direction: row;
     }
     button {
-        .custom-btn(200px, 50px);
+        .custom-btn(150px, 45px);
     }
     .btn1 {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        @media (max-width: 500px) {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-            border-bottom-left-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        @media @mobile {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+        }
+    }
+    .btn2 {
+        display: none;
+        @media @mobile {
+            display: flex;
         }
     }
     .btn4 {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-        @media (max-width: 500px) {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        @media @mobile {
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 0;
+
         }
     }
 }
 
 .login {
-    margin: 200px 0 100px 0;
+    margin: 100px 0 100px 0;
     .center;
-    @media (min-width: 500px) {
+    @media @mobile {
         justify-content: flex-end;
         margin: 10px 0 290px 0;
     }
@@ -48,14 +55,15 @@ nav {
         margin: 5px 30px;
         font-size: 3.5rem;
         border-radius: 12px;
-        @media (min-width: 500px) {
-            .custom-btn(150px, 50px);
-            margin: 200px 0 100px 0;
-            background: grey;
-            color: white;            padding: 0 20px;
-            margin: 5px 30px;
-            font-size: 2rem;
-            border-radius: 12px;
+        @media @mobile {
+            // .custom-btn(150px, 50px);
+            // margin: 200px 0 100px 0;
+            // background: grey;
+            // color: white;            padding: 0 20px;
+            // margin: 5px 30px;
+            // font-size: 2rem;
+            // border-radius: 12px;
+            display: none;
        }
     }
 }
