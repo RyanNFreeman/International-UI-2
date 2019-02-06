@@ -166,9 +166,6 @@ a {
   text-decoration: none;
   color: white;
 }
-a:hover {
-  text-decoration: underline;
-}
 .image .main {
   width: 400px;
   border: 1px solid red;
@@ -228,7 +225,7 @@ a:hover {
 nav {
   flex-direction: column;
   width: 90%;
-  padding: 5%;
+  padding: 20px 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,8 +236,8 @@ nav {
   }
 }
 nav button {
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 45px;
   background-color: black;
   border: 1px solid white;
   opacity: 0.75;
@@ -250,29 +247,37 @@ nav button {
   align-items: center;
 }
 nav .btn1 {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   nav .btn1 {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+nav .btn2 {
+  display: none;
+}
+@media (min-width: 500px) {
+  nav .btn2 {
+    display: flex;
   }
 }
 nav .btn4 {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   nav .btn4 {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
   }
 }
 .login {
-  margin: 200px 0 100px 0;
+  margin: 100px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,32 +309,42 @@ nav .btn4 {
 }
 @media (min-width: 500px) {
   .login button {
-    width: 150px;
-    height: 50px;
-    background-color: black;
-    border: 1px solid white;
-    opacity: 0.75;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 200px 0 100px 0;
-    background: grey;
-    color: white;
-    padding: 0 20px;
-    margin: 5px 30px;
-    font-size: 2rem;
-    border-radius: 12px;
+    display: none;
   }
 }
 body {
   width: 100%;
 }
+.card {
+  border: 1px solid red;
+}
+article {
+  display: none;
+}
+#main article {
+  display: none;
+}
+#main .change {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(65, 65, 65, 0.6);
+}
 #footer {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 0 20px;
+  background-color: black;
+}
+@media (min-width: 500px) {
+  #footer {
+    background-color: transparent;
+    justify-content: flex-end;
+    margin-top: 200px;
+  }
 }
 #footer p {
   color: white;
