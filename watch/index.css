@@ -325,6 +325,7 @@ article {
   display: none;
 }
 #main .change {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
