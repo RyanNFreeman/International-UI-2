@@ -102,10 +102,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -149,12 +145,23 @@ html {
   font-size: 62.5%;
 }
 h1,
-h2,
-h3 {
+h2 {
   font-size: 3rem;
   line-height: 2;
+  width: 100%;
 }
-p {
+h3 {
+  font-size: 2.5rem;
+  line-height: 2;
+  width: 100%;
+}
+h4 {
+  font-size: 2rem;
+  line-height: 2;
+  width: 100%;
+}
+p,
+li {
   font-size: 2rem;
   line-height: 2;
   text-decoration: none;
@@ -165,6 +172,9 @@ a {
   line-height: 2;
   text-decoration: none;
   color: white;
+}
+em {
+  text-decoration: underline;
 }
 .image .main {
   width: 400px;
@@ -221,6 +231,18 @@ a {
   color: white;
   opacity: 1;
   text-align: center;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(65, 65, 65, 0.3);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 nav {
   flex-direction: column;
@@ -325,12 +347,69 @@ article {
   display: none;
 }
 #main .change {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  top: 5px;
+  bottom: 5px;
+  margin: 5%;
+  border-radius: 8px;
+}
+article {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  height: 100%;
+  background: black;
+}
+article button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+  opacity: 0.75;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: none;
+  font-size: 2rem;
+  border: none;
+}
+article button:hover {
+  border-radius: 50%;
+  background: grey;
+  opacity: 0.5;
+}
+article h2 {
+  width: 100%;
+  line-height: 3;
+}
+article p,
+article li {
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+article ol {
+  width: 95%;
+  color: white;
+}
+article .profile {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  padding: 10px;
-  background-color: rgba(65, 65, 65, 0.6);
+}
+article .profile img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+article .profile p {
+  padding: 20px;
 }
 #footer {
   display: flex;
