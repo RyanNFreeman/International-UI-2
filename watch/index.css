@@ -238,7 +238,6 @@ em {
   left: 0;
   width: 100%;
   background-color: rgba(65, 65, 65, 0.3);
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,26 +342,19 @@ body {
 article {
   display: none;
 }
-#main article {
-  display: none;
-}
 #main .change {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
   padding: 5%;
+  color: white;
   top: 5px;
   bottom: 5px;
   margin: 5%;
   border-radius: 8px;
+  background-color: black;
 }
-article {
-  display: flex;
-  justify-content: flex-end;
-  color: white;
-  height: 100%;
-  background: black;
-}
-article button {
+#main .change button {
   width: 30px;
   height: 30px;
   background-color: black;
@@ -377,38 +369,38 @@ article button {
   font-size: 2rem;
   border: none;
 }
-article button:hover {
+#main .change button:hover {
   border-radius: 50%;
   background: grey;
   opacity: 0.5;
 }
-article h2 {
+#main .change h2 {
   width: 100%;
   line-height: 3;
 }
-article p,
-article li {
+#main .change p,
+#main .change li {
   width: 100%;
   font-size: 1.5rem;
   color: white;
   margin-bottom: 10px;
 }
-article ol {
+#main .change ol {
   width: 95%;
   color: white;
 }
-article .profile {
+#main .change .profile {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
 }
-article .profile img {
+#main .change .profile img {
   width: 200px;
   height: 150px;
   border-radius: 10px;
 }
-article .profile p {
+#main .change .profile p {
   padding: 20px;
 }
 #footer {
