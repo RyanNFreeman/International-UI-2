@@ -6,6 +6,7 @@ class TabLink {
     }
     linkClick() {
       this.tabContent.toggleContent();
+    
     }
   }
   
@@ -15,14 +16,18 @@ constructor(tabElement) {
 }
 toggleContent() {
     this.tabElement.classList.toggle('change');
+    // bg.style.filter='blur(4px)';
+    // bg.style.WebkitFilter='blur(4px)';
+    // content.style.display='none';
 }
 }
 const links = document.querySelectorAll('.link');
 links.forEach( link => new TabLink(link));
 
   
-
+const content = document.querySelector('.content')
 const mainbtn = document.querySelector('#login');
+const bg = document.querySelector('#bg')
 
 mainbtn.addEventListener('mouseover', () => {
     mainbtn.style.backgroundColor = "darkred";
