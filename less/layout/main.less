@@ -5,18 +5,15 @@ body {
     // }
 }
 
-.card {
-    border: 1px solid red;
-}
-
 article {
     display: none;
+    z-index: 10;
 }
 
-
-#main .change {
+.change {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     position: absolute;
     padding: 5%;
     color: white;
@@ -24,17 +21,20 @@ article {
     bottom: 5px;
     margin: 5%;
     border-radius: 8px;
-    background-color: black;
+    background-color: rebeccapurple;
+    overflow: auto;
+    opacity: .7;
     button {
-        .custom-btn(30px, 30px);
+        .custom-btn(40px, 40px);
+        justify-content: center;
         color: white;
         background: none;
         font-size:2rem;
         border: none;
         &:hover {
             border-radius: 50%;
-            background: grey;
-            opacity: .5;
+            background: purple;
+            opacity: .7;
         }
     }
     h2 {
@@ -58,8 +58,9 @@ article {
         margin: 20px;
         img {
             width: 200px;
-            height: 150px;
-            border-radius: 10px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
         }
         p {
             padding: 20px;
@@ -67,3 +68,9 @@ article {
     }
 }
 
+#login {
+    // z-index: 4;
+    p {
+        margin-bottom: 300px;
+    }
+}

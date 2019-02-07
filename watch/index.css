@@ -180,26 +180,26 @@ em {
   width: 400px;
   border: 1px solid red;
 }
-#bg {
+.bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-image: url('images/bg3.jpg');
-  background-color: lightblue;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
 }
+.change2 {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
 #wrapper {
   margin: 0 auto;
   position: relative;
   z-index: 3;
-}
-#main .main {
-  width: 300px;
 }
 .content {
   display: flex;
@@ -336,15 +336,14 @@ nav .btn4 {
 body {
   width: 100%;
 }
-.card {
-  border: 1px solid red;
-}
 article {
   display: none;
+  z-index: 10;
 }
-#main .change {
+.change {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   position: absolute;
   padding: 5%;
   color: white;
@@ -352,56 +351,62 @@ article {
   bottom: 5px;
   margin: 5%;
   border-radius: 8px;
-  background-color: black;
+  background-color: rebeccapurple;
+  overflow: auto;
+  opacity: 0.7;
 }
-#main .change button {
-  width: 30px;
-  height: 30px;
+.change button {
+  width: 40px;
+  height: 40px;
   background-color: black;
   border: 1px solid white;
   opacity: 0.75;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: white;
   background: none;
   font-size: 2rem;
   border: none;
 }
-#main .change button:hover {
+.change button:hover {
   border-radius: 50%;
-  background: grey;
-  opacity: 0.5;
+  background: purple;
+  opacity: 0.7;
 }
-#main .change h2 {
+.change h2 {
   width: 100%;
   line-height: 3;
 }
-#main .change p,
-#main .change li {
+.change p,
+.change li {
   width: 100%;
   font-size: 1.5rem;
   color: white;
   margin-bottom: 10px;
 }
-#main .change ol {
+.change ol {
   width: 95%;
   color: white;
 }
-#main .change .profile {
+.change .profile {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
 }
-#main .change .profile img {
+.change .profile img {
   width: 200px;
-  height: 150px;
-  border-radius: 10px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
 }
-#main .change .profile p {
+.change .profile p {
   padding: 20px;
+}
+#login p {
+  margin-bottom: 300px;
 }
 #footer {
   display: flex;
