@@ -1,8 +1,5 @@
 body {
     width: 100%;
-    // @media(min-width: 800px) {
-    //     width: 800px;
-    // }
 }
 
 article {
@@ -21,10 +18,13 @@ article {
     bottom: 5px;
     margin: 5%;
     border-radius: 8px;
-    background-color: rebeccapurple;
+    background-color: black;
     overflow: auto;
-    opacity: .7;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
     button {
+        position: fixed;
         .custom-btn(40px, 40px);
         justify-content: center;
         color: white;
@@ -40,12 +40,26 @@ article {
     h2 {
         width: 100%;
         line-height: 3;
+        text-decoration: underline;
     }
-    p, li {
+    h3, h4 {
+        animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    }
+    p {
         width: 100%;
         font-size: 1.5rem;
         color: white;
         margin-bottom: 10px;
+        padding: 50px;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+    }
+    li {
+        width: 100%;
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 10px;
+        padding: 0;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
     }
     ol {
         width: 95%;
@@ -56,6 +70,7 @@ article {
         display: flex;
         flex-wrap: wrap;
         margin: 20px;
+        
         img {
             width: 200px;
             height: 200px;
@@ -69,8 +84,12 @@ article {
 }
 
 #login {
-    // z-index: 4;
     p {
         margin-bottom: 300px;
     }
 }
+
+// .hd {
+//     display: block;
+//     position: fixed;
+// }
