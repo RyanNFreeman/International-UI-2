@@ -18,13 +18,6 @@ constructor(tabElement) {
 }
 toggleContent() {
     this.tabElement.classList.toggle('change');
-    // bg.style.filter='blur(4px)';
-    // bg.style.WebkitFilter='blur(4px)';
-    // bg.style.zIndex='3';
-    // article.style.zIndex='5';
-    // nav.style.display='none';
-    // content.style.display='none';
-
     }
 }
 
@@ -35,8 +28,6 @@ class BkGround {
 
 toggleContent2() {
     this.tab.classList.toggle('change2');
-    // bg.style.filter='blur(4px)';
-    // bg.style.WebkitFilter='blur(4px)';
     }
 }
 
@@ -47,7 +38,6 @@ links.forEach( link => new TabLink(link));
 const content = document.querySelector('.content')
 const mainbtn = document.querySelector('#login');
 const nav = document.querySelector('nav');
-const bg = document.querySelector('#bg');
 const article = document.querySelector('article')
 
 mainbtn.addEventListener('mouseover', () => {

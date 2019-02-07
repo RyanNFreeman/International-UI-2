@@ -192,7 +192,7 @@ em {
   background-size: cover;
   z-index: 1;
 }
-.bg .change2 {
+.change2 {
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -336,11 +336,9 @@ nav .btn4 {
 body {
   width: 100%;
 }
-.card {
-  border: 1px solid red;
-}
 article {
   display: none;
+  z-index: 10;
 }
 .change {
   display: flex;
@@ -400,8 +398,9 @@ article {
 }
 .change .profile img {
   width: 200px;
-  height: 150px;
-  border-radius: 10px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 .change .profile p {
   padding: 20px;
