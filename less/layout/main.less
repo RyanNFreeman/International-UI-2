@@ -13,10 +13,10 @@ article {
     display: none;
 }
 
-
-#main .change {
+.change {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     position: absolute;
     padding: 5%;
     color: white;
@@ -24,17 +24,20 @@ article {
     bottom: 5px;
     margin: 5%;
     border-radius: 8px;
-    background-color: black;
+    background-color: rebeccapurple;
+    overflow: auto;
+    opacity: .7;
     button {
-        .custom-btn(30px, 30px);
+        .custom-btn(40px, 40px);
+        justify-content: center;
         color: white;
         background: none;
         font-size:2rem;
         border: none;
         &:hover {
             border-radius: 50%;
-            background: grey;
-            opacity: .5;
+            background: purple;
+            opacity: .7;
         }
     }
     h2 {
@@ -67,3 +70,8 @@ article {
     }
 }
 
+#login {
+    p {
+        margin-bottom: 300px;
+    }
+}
